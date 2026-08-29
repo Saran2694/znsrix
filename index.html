@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZNSRIX — Digital Technology, Design &amp; Development</title>
+  <meta name="description" content="ZNSRIX creates modern digital experiences, custom software solutions, and technology products designed around real business needs.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- 3D BACKGROUND CANVAS CONTAINER -->
+  <div id="webgl-container"></div>
+
+  <!-- GLOBAL NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand-logo">
+        <img src="img/sr2.png" alt="ZNSRIX" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="packages.html" class="nav-link">Packages</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="careers.html" class="nav-link">Careers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="quote.html" class="btn btn-primary btn-sm">Get a Quote &rarr;</a>
+      </div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV DRAWER -->
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="packages.html" class="mobile-nav-link">Packages</a>
+      <a href="projects.html" class="mobile-nav-link">Projects</a>
+      <a href="careers.html" class="mobile-nav-link">Careers</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+    <div style="margin-top: auto;">
+      <a href="quote.html" class="btn btn-primary btn-full">Get a Quote &rarr;</a>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="label-caps">DIGITAL TECHNOLOGY &bull; DESIGN &bull; DEVELOPMENT</div>
+        <h1 class="heading-xl">BUILD. CREATE. SCALE.</h1>
+        <p class="subtext" style="margin-top: 20px;">ZNSRIX creates modern digital experiences, software solutions and technology products designed around real business needs.</p>
+        <div class="hero-buttons" style="margin-top: 36px;">
+          <a href="quote.html" class="btn btn-primary">Start a Project &rarr;</a>
+          <a href="services.html" class="btn btn-secondary">Explore Services</a>
+        </div>
+      </div>
+
+      <!-- 3D ZNSRIX Abstract Core Visual -->
+      <div class="hero-3d-wrapper">
+        <canvas id="hero-3d-canvas"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust-strip">
+    <div class="container">
+      <div class="trust-strip-title">Technology built around your business.</div>
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-num">01</div>
+          <div class="trust-text">Modern Technology</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num">02</div>
+          <div class="trust-text">Professional Design</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num">03</div>
+          <div class="trust-text">Scalable Solutions</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num">04</div>
+          <div class="trust-text">Business Focused</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PINNED SERVICES PREVIEW -->
+  <section class="section pinned-services-section">
+    <div class="container">
+      <div class="pinned-layout">
+        
+        <!-- Sticky Left Header -->
+        <div class="pinned-left">
+          <div class="label-caps">OUR CORE EXPERTISE</div>
+          <h2 class="heading-lg" style="margin-bottom: 20px;">What we build</h2>
+          <p class="subtext" style="margin-bottom: 32px;">Custom software systems, responsive portals, and intelligent digital experiences tailored to enterprise needs.</p>
+          <a href="services.html" class="btn btn-secondary">View All Services &rarr;</a>
+        </div>
+
+        <!-- Scrolling Right Cards -->
+        <div class="pinned-right">
+          <!-- Service 1 -->
+          <div class="card-dark service-card service-card-pinned active">
+            <img src="img/webdevelopment.png" alt="Web Development" class="service-img">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="heading-md" style="margin-bottom: 12px;">Web Development</h3>
+            <p class="subtext">Responsive business websites, corporate portals, and ultra-fast web experiences engineered for growth.</p>
+            <a href="services.html" class="link-arrow" style="margin-top: 24px;">Learn More &rarr;</a>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="card-dark service-card service-card-pinned">
+            <img src="img/softweredevelopment.png" alt="Software Development" class="service-img">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="heading-md" style="margin-bottom: 12px;">Software Development</h3>
+            <p class="subtext">Custom software applications built around your exact business workflows and operational requirements.</p>
+            <a href="services.html" class="link-arrow" style="margin-top: 24px;">Learn More &rarr;</a>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="card-dark service-card service-card-pinned">
+            <img src="img/uiux.png" alt="UI/UX Design" class="service-img">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <h3 class="heading-md" style="margin-bottom: 12px;">UI/UX Design</h3>
+            <p class="subtext">Intuitive user interfaces, clear user journeys, wireframes, and digital product designs that convert.</p>
+            <a href="services.html" class="link-arrow" style="margin-top: 24px;">Learn More &rarr;</a>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="card-dark service-card service-card-pinned">
+            <img src="img/mobileapp.png" alt="Mobile App Development" class="service-img">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <h3 class="heading-md" style="margin-bottom: 12px;">Mobile App Development</h3>
+            <p class="subtext">Native and cross-platform mobile applications for Android and iOS designed for high performance.</p>
+            <a href="services.html" class="link-arrow" style="margin-top: 24px;">Learn More &rarr;</a>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="card-dark service-card service-card-pinned">
+            <img src="img/e-comerse.png" alt="E-Commerce" class="service-img">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            </div>
+            <h3 class="heading-md" style="margin-bottom: 12px;">E-Commerce</h3>
+            <p class="subtext">High-converting online stores, automated checkout systems, product catalogues, and payment gateways.</p>
+            <a href="services.html" class="link-arrow" style="margin-top: 24px;">Learn More &rarr;</a>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="card-dark service-card service-card-pinned">
+            <img src="img/ai&automation.png" alt="AI & Automation" class="service-img">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 class="heading-md" style="margin-bottom: 12px;">AI &amp; Automation</h3>
+            <p class="subtext">Intelligent workflows, AI chatbot integrations, business task automation, and digital optimization.</p>
+            <a href="services.html" class="link-arrow" style="margin-top: 24px;">Learn More &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED OFFER BANNER (NO PRICES) -->
+  <section class="section">
+    <div class="container">
+      <div class="featured-package-banner">
+        <div class="featured-pkg-grid">
+          <div>
+            <div class="label-caps">FEATURED SERVICE PLAN</div>
+            <h2 class="heading-lg">Tailored technology solutions for ambitious companies.</h2>
+            <p class="subtext" style="margin-top: 16px;">Comprehensive digital packages crafted for business growth, with custom UI design, high performance, enquiry integrations and technical support.</p>
+          </div>
+          <div style="text-align: right; background: var(--bg-pure); padding: 36px; border-radius: var(--radius-md); border: 1px solid var(--border-medium);">
+            <div style="font-size: 0.85rem; font-weight: 800; color: var(--accent-orange); text-transform: uppercase;">Business Solution</div>
+            <h3 style="font-size: 1.8rem; font-weight: 900; color: var(--text-white); margin: 12px 0 20px;">Custom Quotation</h3>
+            <a href="quote.html" class="btn btn-primary btn-full">Get a Quote &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="label-caps">HOW WE WORK</div>
+        <h2 class="heading-lg">Our Execution Process</h2>
+      </div>
+
+      <div class="process-grid">
+        <div class="card-dark process-card">
+          <div class="process-num">01</div>
+          <h3 class="heading-md" style="margin-bottom: 8px;">Discover</h3>
+          <p class="subtext">We analyze your business goals, target audience, and project scope to construct a precise strategic blueprint.</p>
+        </div>
+
+        <div class="card-dark process-card">
+          <div class="process-num">02</div>
+          <h3 class="heading-md" style="margin-bottom: 8px;">Plan</h3>
+          <p class="subtext">Defining site architecture, user journeys, technology stack, content hierarchy, and project timelines.</p>
+        </div>
+
+        <div class="card-dark process-card">
+          <div class="process-num">03</div>
+          <h3 class="heading-md" style="margin-bottom: 8px;">Design</h3>
+          <p class="subtext">Crafting bespoke UI wireframes and high-fidelity prototypes aligned with your brand identity.</p>
+        </div>
+
+        <div class="card-dark process-card">
+          <div class="process-num">04</div>
+          <h3 class="heading-md" style="margin-bottom: 8px;">Develop</h3>
+          <p class="subtext">Writing clean, modular, production-ready code with responsive layouts and seamless backend integrations.</p>
+        </div>
+
+        <div class="card-dark process-card">
+          <div class="process-num">05</div>
+          <h3 class="heading-md" style="margin-bottom: 8px;">Test</h3>
+          <p class="subtext">Rigorous cross-browser testing, mobile responsiveness, speed optimization, and security audits.</p>
+        </div>
+
+        <div class="card-dark process-card">
+          <div class="process-num">06</div>
+          <h3 class="heading-md" style="margin-bottom: 8px;">Launch</h3>
+          <p class="subtext">Deploying your digital asset to production server, DNS configuration, search indexing, and continuous support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="label-caps">START YOUR JOURNEY</div>
+        <h2 class="heading-lg">Have an idea?<br><span class="text-orange">Let's build it.</span></h2>
+        <p class="subtext">Transform your digital presence with ZNSRIX. Contact our engineering team today to discuss your next project.</p>
+        <a href="quote.html" class="btn btn-primary">Start a Project &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="img/sr2.png" alt="ZNSRIX" class="brand-logo-img">
+          </a>
+          <p>Modern web development, software engineering, and digital technology solutions built for business growth.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="about.html">About ZNSRIX</a>
+            <a href="services.html">Services</a>
+            <a href="packages.html">Packages</a>
+            <a href="projects.html">Projects</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="services.html">Web Development</a>
+            <a href="services.html">Software Engineering</a>
+            <a href="services.html">UI/UX Design</a>
+            <a href="services.html">Mobile Apps</a>
+            <a href="services.html">E-Commerce</a>
+            <a href="services.html">AI & Automation</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Packages</h4>
+          <div class="footer-links">
+            <a href="packages.html">Starter Plan</a>
+            <a href="packages.html">Business Plan</a>
+            <a href="packages.html">Professional Plan</a>
+            <a href="packages.html">Premium Custom</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="footer-links">
+            <a href="tel:+917418570190">+91 7418570190</a>
+            <a href="mailto:hello@znsrix.com">hello@znsrix.com</a>
+            <a href="https://www.instagram.com/znsrix/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="contact.html">Coimbatore, TN, India</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 ZNSRIX. All Rights Reserved.</div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

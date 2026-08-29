@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers — Join ZNSRIX Engineering Team</title>
+  <meta name="description" content="Build the future of digital products with ZNSRIX. Explore open positions in Frontend, Backend, UI/UX Design, and Software Engineering.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- 3D BACKGROUND CANVAS CONTAINER -->
+  <div id="webgl-container"></div>
+
+  <!-- GLOBAL NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand-logo">
+        <img src="img/sr2.png" alt="ZNSRIX" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="packages.html" class="nav-link">Packages</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="careers.html" class="nav-link active">Careers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="quote.html" class="btn btn-primary btn-sm">Get a Quote &rarr;</a>
+      </div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV DRAWER -->
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="packages.html" class="mobile-nav-link">Packages</a>
+      <a href="projects.html" class="mobile-nav-link">Projects</a>
+      <a href="careers.html" class="mobile-nav-link active">Careers</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+    <div style="margin-top: auto;">
+      <a href="quote.html" class="btn btn-primary btn-full">Get a Quote &rarr;</a>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section" style="min-height: auto; padding-top: 180px; padding-bottom: 80px;">
+    <div class="container">
+      <div class="label-caps">CAREERS AT ZNSRIX</div>
+      <h1 class="heading-xl" style="max-width: 900px; margin-bottom: 24px;">
+        BUILD <span class="text-orange">WITH US</span>.
+      </h1>
+      <p class="subtext" style="font-size: 1.2rem; max-width: 800px;">
+        We are looking for curious engineers, designers, and problem solvers who love crafting ambitious technology products.
+      </p>
+    </div>
+  </section>
+
+  <!-- OPEN POSITIONS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="label-caps">OPEN ROLES</div>
+        <h2 class="heading-lg">Current Openings</h2>
+      </div>
+
+      <div class="grid-2">
+        
+        <!-- Role 1 -->
+        <div class="job-card">
+          <div>
+            <div class="job-title" style="font-size: 1.4rem; font-weight: 900; margin-bottom: 12px;">FRONTEND DEVELOPER</div>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
+              Craft responsive, high-performance user interfaces using modern web frameworks with pixel precision and micro-animations.
+            </p>
+            <div style="margin-bottom: 24px;">
+              <div class="tech-tags">
+                <span class="tech-tag">REACT</span>
+                <span class="tech-tag">JAVASCRIPT</span>
+                <span class="tech-tag">UI/UX</span>
+                <span class="tech-tag">GIT</span>
+              </div>
+            </div>
+          </div>
+          <a href="#applySection" class="btn btn-secondary btn-sm" onclick="setApplyRole('Frontend Developer')">VIEW POSITION &rarr;</a>
+        </div>
+
+        <!-- Role 2 -->
+        <div class="job-card">
+          <div>
+            <div class="job-title" style="font-size: 1.4rem; font-weight: 900; margin-bottom: 12px;">BACKEND DEVELOPER</div>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
+              Architect robust cloud APIs, database models, microservices, and server-side infrastructure for enterprise platforms.
+            </p>
+            <div style="margin-bottom: 24px;">
+              <div class="tech-tags">
+                <span class="tech-tag">NODE.JS</span>
+                <span class="tech-tag">JAVA</span>
+                <span class="tech-tag">REST APIS</span>
+                <span class="tech-tag">DATABASES</span>
+              </div>
+            </div>
+          </div>
+          <a href="#applySection" class="btn btn-secondary btn-sm" onclick="setApplyRole('Backend Developer')">VIEW POSITION &rarr;</a>
+        </div>
+
+        <!-- Role 3 -->
+        <div class="job-card">
+          <div>
+            <div class="job-title" style="font-size: 1.4rem; font-weight: 900; margin-bottom: 12px;">UI/UX DESIGNER</div>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
+              Design visual systems, wireframes, component libraries, and intuitive end-to-end user experiences for modern products.
+            </p>
+            <div style="margin-bottom: 24px;">
+              <div class="tech-tags">
+                <span class="tech-tag">FIGMA</span>
+                <span class="tech-tag">UI DESIGN</span>
+                <span class="tech-tag">UX RESEARCH</span>
+                <span class="tech-tag">PROTOTYPING</span>
+              </div>
+            </div>
+          </div>
+          <a href="#applySection" class="btn btn-secondary btn-sm" onclick="setApplyRole('UI/UX Designer')">VIEW POSITION &rarr;</a>
+        </div>
+
+        <!-- Role 4 -->
+        <div class="job-card">
+          <div>
+            <div class="job-title" style="font-size: 1.4rem; font-weight: 900; margin-bottom: 12px;">SOFTWARE DEVELOPER</div>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
+              Engineer custom business logic, third-party software integrations, data pipelines, and internal tools across client solutions.
+            </p>
+            <div style="margin-bottom: 24px;">
+              <div class="tech-tags">
+                <span class="tech-tag">PROGRAMMING</span>
+                <span class="tech-tag">APIS</span>
+                <span class="tech-tag">DATABASES</span>
+                <span class="tech-tag">GIT</span>
+              </div>
+            </div>
+          </div>
+          <a href="#applySection" class="btn btn-secondary btn-sm" onclick="setApplyRole('Software Developer')">VIEW POSITION &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLY SECTION -->
+  <section class="section" id="applySection" style="background-color: var(--bg-surface);">
+    <div class="container" style="max-width: 800px;">
+      <div class="card-dark" style="padding: 48px;">
+        <div style="text-align: center; margin-bottom: 32px;">
+          <div class="label-caps">GENERAL APPLICATION</div>
+          <h2 class="heading-md">Don't see your role? Send us your resume.</h2>
+          <p class="subtext" style="margin: 8px auto 0;">We are always looking for exceptional talent to join ZNSRIX.</p>
+        </div>
+
+        <form id="careerForm" action="https://formsubmit.co/srisaran2694@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Career Application - ZNSRIX">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="grid-2">
+            <div class="form-group">
+              <label class="form-label" for="applicantName">Full Name *</label>
+              <input type="text" id="applicantName" name="Name" class="form-control" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="applicantEmail">Email Address *</label>
+              <input type="email" id="applicantEmail" name="Email" class="form-control" placeholder="john@example.com" required>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="form-group">
+              <label class="form-label" for="applicantPhone">Phone Number *</label>
+              <input type="tel" id="applicantPhone" name="Phone" class="form-control" placeholder="+91 98765 43210" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="applicantRole">Position of Interest</label>
+              <select id="applicantRole" name="Role" class="form-control">
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="Backend Developer">Backend Developer</option>
+                <option value="UI/UX Designer">UI/UX Designer</option>
+                <option value="Software Developer">Software Developer</option>
+                <option value="Other">Other / General Interest</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="portfolioLink">Portfolio / GitHub / Resume Link *</label>
+            <input type="url" id="portfolioLink" name="Portfolio or Resume Link" class="form-control" placeholder="https://github.com/username or LinkedIn URL" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="coverLetter">Brief Bio / Why ZNSRIX?</label>
+            <textarea id="coverLetter" name="Cover Letter" class="form-control" placeholder="Tell us about your technical background and experience..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Apply to ZNSRIX &rarr;</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="img/sr2.png" alt="ZNSRIX" class="brand-logo-img">
+          </a>
+          <p>Modern web development, software engineering, and digital technology solutions built for business growth.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="about.html">About ZNSRIX</a>
+            <a href="services.html">Services</a>
+            <a href="packages.html">Packages</a>
+            <a href="projects.html">Projects</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="services.html">Web Development</a>
+            <a href="services.html">Software Engineering</a>
+            <a href="services.html">UI/UX Design</a>
+            <a href="services.html">Mobile Apps</a>
+            <a href="services.html">E-Commerce</a>
+            <a href="services.html">AI & Automation</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Packages</h4>
+          <div class="footer-links">
+            <a href="packages.html">Starter Plan</a>
+            <a href="packages.html">Business Plan</a>
+            <a href="packages.html">Professional Plan</a>
+            <a href="packages.html">Premium Custom</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="footer-links">
+            <a href="tel:+917418570190">+91 7418570190</a>
+            <a href="mailto:hello@znsrix.com">hello@znsrix.com</a>
+            <a href="https://www.instagram.com/znsrix/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="contact.html">Coimbatore, TN, India</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 ZNSRIX. All Rights Reserved.</div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/three-scene.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function setApplyRole(role) {
+      const select = document.getElementById('applicantRole');
+      if (select) select.value = role;
+    }
+  </script>
+</body>
+</html>
